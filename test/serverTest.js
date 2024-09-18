@@ -3,7 +3,7 @@
 const mc = require('../')
 const assert = require('power-assert')
 const { once } = require('events')
-const nbt = require('prismarine-nbt')
+const nbt = require('reinarpg-nbt')
 const applyClientHelpers = require('./common/clientHelpers')
 
 const { getPort } = require('./common/util')
@@ -26,7 +26,7 @@ const w = nbt.comp({
 
 for (const supportedVersion of mc.supportedVersions) {
   let PORT
-  const mcData = require('minecraft-data')(supportedVersion)
+  const mcData = require('reinarpg-data')(supportedVersion)
   const version = mcData.version
 
   const loginPacket = (client, server) => {

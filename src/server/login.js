@@ -37,7 +37,7 @@ module.exports = function (client, server, options) {
   let loginKickTimer = setTimeout(kickForNotLoggingIn, kickTimeout)
 
   function onLogin (packet) {
-    const mcData = require('minecraft-data')(client.version)
+    const mcData = require('reinarpg-data')(client.version)
     client.supportFeature = mcData.supportFeature
 
     client.username = packet.username
@@ -172,7 +172,7 @@ module.exports = function (client, server, options) {
       client.uuid = uuid.nameToMcOfflineUUID(client.username)
     }
     options.beforeLogin?.(client)
-    if (client.protocolVersion >= 27) { // 14w28a (27) added whole-protocol compression (http://wiki.vg/Protocol_History#14w28a), earlier versions per-packet compressed TODO: refactor into minecraft-data
+    if (client.protocolVersion >= 27) { // 14w28a (27) added whole-protocol compression (http://wiki.vg/Protocol_History#14w28a), earlier versions per-packet compressed TODO: refactor into reinarpg-data
       client.write('compress', { threshold: 256 }) // Default threshold is 256
       client.compressionThreshold = 256
     }

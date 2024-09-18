@@ -22,7 +22,7 @@ function ping (options) {
   options.host = options.host || 'localhost'
   options.port = options.port || 25565
   const optVersion = options.version || require('./version').defaultVersion
-  const mcData = require('minecraft-data')(optVersion)
+  const mcData = require('reinarpg-data')(optVersion)
   const version = mcData.version
   options.majorVersion = version.majorVersion
   options.protocolVersion = version.version

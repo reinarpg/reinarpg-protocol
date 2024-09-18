@@ -40,7 +40,7 @@ class Splitter extends Transform {
       const header = Buffer.alloc(sizeOfVarInt(LEGACY_PING_PACKET_ID))
       writeVarInt(LEGACY_PING_PACKET_ID, header, 0)
       let payload = this.buffer.slice(1) // remove 0xfe packet id
-      if (payload.length === 0) payload = Buffer.from('\0') // TODO: update minecraft-data to recognize a lone 0xfe, https://github.com/PrismarineJS/minecraft-data/issues/95
+      if (payload.length === 0) payload = Buffer.from('\0') // TODO: update reinarpg-data to recognize a lone 0xfe, https://github.com/PrismarineJS/reinarpg-data/issues/95
       this.push(Buffer.concat([header, payload]))
       return cb()
     }

@@ -89,7 +89,7 @@
 * 1.19.1/2 signed chat support  (@frej4189 @extremeheat)
 
 ## 1.36.2
-* Throw error on minecraft-data protocol version mismatch (#1044)
+* Throw error on reinarpg-data protocol version mismatch (#1044)
 * Make "fakeHost" option working
 * Update microsoftAuth to set default flow option
 
@@ -460,10 +460,10 @@
 
 ## 1.0.0
 
-* update prismarine-nbt
+* update reinarpg-nbt
 * fixed options.favicon in createServer
 * enable strict mode
-* update to minecraft-data 2.0.0
+* update to reinarpg-data 2.0.0
 * finally move to a major version
 
 ## 0.19.6
@@ -494,11 +494,11 @@
 
 ## 0.19.0
 
-* update minecraft-data, support 1.9-pre4
+* update reinarpg-data, support 1.9-pre4
 
 ## 0.18.3
 
-* update protodef and minecraft-data for new protocol schema
+* update protodef and reinarpg-data for new protocol schema
 
 ## 0.18.2
 
@@ -532,7 +532,7 @@
 * make it easy to create client plugins (and create minecraft-protocol-forge) (thanks @deathcap)
 * use babel6
 * add dynamic version support in client
-* update minecraft-data
+* update reinarpg-data
 
 ## 0.16.6
 
@@ -564,7 +564,7 @@
 
  * cross version support exposed : version option in createClient and createServer
  * expose createSerializer and createDeserializer, createPacketBuffer and parsePacketData are now available in serializer/parser instances (BREAKING CHANGE)
- * stop exposing packetFields, packetNames, packetIds, packetStates. That data is available by requiring minecraft-data package (BREAKING CHANGE)
+ * stop exposing packetFields, packetNames, packetIds, packetStates. That data is available by requiring reinarpg-data package (BREAKING CHANGE)
  * don't expose version anymore but supportedVersions (BREAKING CHANGE)
  * use node-yggdrasil : index.js now doesn't expose yggdrasil, use node-yggdrasil directly if needed (BREAKING CHANGE)
  * createServers's beforePing option can now takes an async function
@@ -580,12 +580,12 @@
  * UUIDs are now strings instead of arrays. (BREAKING CHANGE)
  * Server clients have a new property, client.profile, containing the result
  of the yggdrasil authentication
- * Protocol.json now lives in minecraft-data
+ * Protocol.json now lives in reinarpg-data
  * Don't bubble up errors from client to server. (BREAKING CHANGE). If you want
    to catch the client errors, you need to add an error listener on that client.
    The old behavior was confusing, error-prone and undocumented !
  * Add keepAlive option to createServer, in order to optionally disable it.
- * Lots of low-level changes to allow minecraft-data to be more generic.
+ * Lots of low-level changes to allow reinarpg-data to be more generic.
  * NMP code is able to work with both 1.8 and 1.9 data with the same code,
    opening a path for cross-versioning.
  * The packet events now take two parameters : `function (packetData, packetMetadata)`

@@ -1,5 +1,5 @@
 const mc = require('minecraft-protocol')
-const nbt = require('prismarine-nbt')
+const nbt = require('reinarpg-nbt')
 
 const options = {
   motd: 'Vox Industries',
@@ -9,7 +9,7 @@ const options = {
 }
 
 const server = mc.createServer(options)
-const mcData = require('minecraft-data')(server.version)
+const mcData = require('reinarpg-data')(server.version)
 const loginPacket = mcData.loginPacket
 function chatText (text) {
   return mcData.supportFeature('chatPacketsUseNbtComponents')

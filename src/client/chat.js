@@ -18,7 +18,7 @@ function isFormatted (message) {
 }
 
 module.exports = function (client, options) {
-  const mcData = require('minecraft-data')(client.version)
+  const mcData = require('reinarpg-data')(client.version)
   client._players = {}
   client._lastChatSignature = null
   client._lastRejectedMessage = null

@@ -17,7 +17,7 @@ const Wrap = require('minecraft-wrap').Wrap
 
 for (const supportedVersion of mc.supportedVersions) {
   let PORT = null
-  const mcData = require('minecraft-data')(supportedVersion)
+  const mcData = require('reinarpg-data')(supportedVersion)
   const version = mcData.version
   const MC_SERVER_JAR_DIR = process.env.MC_SERVER_JAR_DIR || os.tmpdir()
   const MC_SERVER_JAR = MC_SERVER_JAR_DIR + '/minecraft_server.' + version.minecraftVersion + '.jar'
@@ -131,7 +131,7 @@ for (const supportedVersion of mc.supportedVersions) {
         client.on('login', (packet) => {
           fs.writeFileSync(MC_SERVER_DIR + '_login.json', JSON.stringify(packet))
           if (fs.existsSync(MC_SERVER_DIR + '_registry_data.json')) {
-            // generate a loginPacket.json for minecraft-data
+            // generate a loginPacket.json for reinarpg-data
             fs.writeFileSync(MC_SERVER_DIR + '_loginPacket.json', JSON.stringify({
               ...packet,
               dimensionCodec: JSON.parse(fs.readFileSync(MC_SERVER_DIR + '_registry_data.json')).codec

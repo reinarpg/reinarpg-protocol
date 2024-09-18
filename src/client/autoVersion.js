@@ -3,7 +3,7 @@
 const ping = require('../ping')
 const debug = require('debug')('minecraft-protocol')
 const states = require('../states')
-const minecraftData = require('minecraft-data')
+const minecraftData = require('reinarpg-data')
 
 module.exports = function (client, options) {
   client.wait_connect = true // don't let src/client/setProtocol proceed on socket 'connect' until 'connect_allowed'
@@ -17,7 +17,7 @@ module.exports = function (client, options) {
     debug('Server description:', motd) // TODO: save
 
     // Pass server-reported version to protocol handler
-    // The version string is interpreted by https://github.com/PrismarineJS/node-minecraft-data
+    // The version string is interpreted by https://github.com/PrismarineJS/node-reinarpg-data
     const brandedMinecraftVersion = response.version.name // 1.8.9, 1.7.10
     const protocolVersion = response.version.protocol//    47,      5
     const guessFromName = [brandedMinecraftVersion]
@@ -29,7 +29,7 @@ module.exports = function (client, options) {
       .sort(function (a, b) { return b.version - a.version })
     const versions = (minecraftData.postNettyVersionsByProtocolVersion.pc[protocolVersion] || []).concat(guessFromName)
     if (versions.length === 0) {
-      client.emit('error', new Error(`unsupported/unknown protocol version: ${protocolVersion}, update minecraft-data`))
+      client.emit('error', new Error(`unsupported/unknown protocol version: ${protocolVersion}, update reinarpg-data`))
     }
     const minecraftVersion = versions[0].minecraftVersion
 

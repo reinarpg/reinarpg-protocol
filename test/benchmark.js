@@ -14,7 +14,7 @@ const testDataWrite = [
 ]
 
 for (const supportedVersion of mc.supportedVersions) {
-  const mcData = require('minecraft-data')(supportedVersion)
+  const mcData = require('reinarpg-data')(supportedVersion)
   const version = mcData.version
   describe('benchmark ' + supportedVersion + 'v', function () {
     this.timeout(60 * 1000)

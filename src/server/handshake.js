@@ -9,12 +9,12 @@ module.exports = function (client, server, { version, fallbackVersion }) {
     client.protocolVersion = packet.protocolVersion
 
     if (version === false) {
-      if (require('minecraft-data')(client.protocolVersion)) {
+      if (require('reinarpg-data')(client.protocolVersion)) {
         client.version = client.protocolVersion
       } else {
         let fallback
         if (fallbackVersion !== undefined) {
-          fallback = require('minecraft-data')(fallbackVersion)
+          fallback = require('reinarpg-data')(fallbackVersion)
         }
         if (fallback) {
           client.version = fallback.version.version

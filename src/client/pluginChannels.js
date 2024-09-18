@@ -1,10 +1,10 @@
 const ProtoDef = require('protodef').ProtoDef
 const minecraft = require('../datatypes/minecraft')
 const debug = require('debug')('minecraft-protocol')
-const nbt = require('prismarine-nbt')
+const nbt = require('reinarpg-nbt')
 
 module.exports = function (client, options) {
-  const mcdata = require('minecraft-data')(options.version || require('../version').defaultVersion)
+  const mcdata = require('reinarpg-data')(options.version || require('../version').defaultVersion)
   const channels = []
   const proto = new ProtoDef(options.validateChannelProtocol ?? true)
   nbt.addTypesToInterpreter('big', proto)

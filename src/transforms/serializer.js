@@ -5,13 +5,13 @@ const Serializer = require('protodef').Serializer
 const Parser = require('protodef').FullPacketParser
 const { ProtoDefCompiler } = require('protodef').Compiler
 
-const nbt = require('prismarine-nbt')
+const nbt = require('reinarpg-nbt')
 const minecraft = require('../datatypes/minecraft')
 const states = require('../states')
 const merge = require('lodash.merge')
 const get = require('lodash.get')
 
-const minecraftData = require('minecraft-data')
+const minecraftData = require('reinarpg-data')
 const protocols = {}
 
 function createProtocol (state, direction, version, customPackets, compiled = true) {
@@ -23,7 +23,7 @@ function createProtocol (state, direction, version, customPackets, compiled = tr
   if (mcData === null) {
     throw new Error(`No data available for version ${version}`)
   } else if (versionInfo && versionInfo.version !== mcData.version.version) {
-    // The protocol version returned by node-minecraft-data constructor does not match the data in minecraft-data's protocolVersions.json
+    // The protocol version returned by node-reinarpg-data constructor does not match the data in reinarpg-data's protocolVersions.json
     throw new Error(`Do not have protocol data for protocol version ${versionInfo.version} (attempted to use ${mcData.version.version} data)`)
   }
 

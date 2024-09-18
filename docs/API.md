@@ -297,7 +297,7 @@ See the [chat example](https://github.com/PrismarineJS/node-minecraft-protocol/b
 
 ### per-packet events
 
-Check out the [minecraft-data docs](https://prismarinejs.github.io/minecraft-data/?v=1.8&d=protocol) to know the event names and data field names.
+Check out the [reinarpg-data docs](https://prismarinejs.github.io/reinarpg-data/?v=1.8&d=protocol) to know the event names and data field names.
 
 
 ### client.writeChannel(channel, params)
@@ -329,8 +329,8 @@ Send a chat message to the server, with signing on 1.19+.
 ## Not Immediately Obvious Data Type Formats
 
 Note : almost all data formats can be understood by looking at
- [minecraft-data docs](https://prismarinejs.github.io/minecraft-data/?v=1.8&d=protocol)
- or [minecraft-data protocol.json](https://github.com/PrismarineJS/minecraft-data/blob/master/data/1.8/protocol.json)
+ [reinarpg-data docs](https://prismarinejs.github.io/reinarpg-data/?v=1.8&d=protocol)
+ or [reinarpg-data protocol.json](https://github.com/PrismarineJS/reinarpg-data/blob/master/data/1.8/protocol.json)
 
 ### entityMetadata
 

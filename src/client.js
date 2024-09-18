@@ -29,7 +29,7 @@ class Client extends EventEmitter {
     this.latency = 0
     this.hideErrors = hideErrors
     this.closeTimer = null
-    const mcData = require('minecraft-data')(version)
+    const mcData = require('reinarpg-data')(version)
     this.state = states.HANDSHAKING
     this._hasBundlePacket = mcData.supportFeature('hasBundlePacket')
   }

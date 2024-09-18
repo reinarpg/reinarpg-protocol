@@ -66,7 +66,7 @@ node-minecraft-protocol is pluggable.
 
 * [API doc](API.md)
 * [faq](FAQ.md)
-* [protocol doc](https://prismarinejs.github.io/minecraft-data/?d=protocol) and [wiki.vg/Protocol](https://wiki.vg/Protocol)
+* [protocol doc](https://prismarinejs.github.io/reinarpg-data/?d=protocol) and [wiki.vg/Protocol](https://wiki.vg/Protocol)
 
 ## Usage
 
@@ -121,7 +121,7 @@ For a more up to date example, see examples/server/server.js.
 
 ```js
 const mc = require('minecraft-protocol')
-const nbt = require('prismarine-nbt')
+const nbt = require('reinarpg-nbt')
 const server = mc.createServer({
   'online-mode': true,   // optional
   encryption: true,      // optional
@@ -129,7 +129,7 @@ const server = mc.createServer({
   port: 25565,           // optional
   version: '1.18'
 })
-const mcData = require('minecraft-data')(server.version)
+const mcData = require('reinarpg-data')(server.version)
 
 function chatText (text) {
   return mcData.supportFeature('chatPacketsUseNbtComponents')

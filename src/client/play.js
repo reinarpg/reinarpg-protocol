@@ -12,7 +12,7 @@ module.exports = function (client, options) {
   })
 
   client.once('login', () => {
-    const mcData = require('minecraft-data')(client.version)
+    const mcData = require('reinarpg-data')(client.version)
     if (mcData.supportFeature('useChatSessions') && client.profileKeys && client.cipher && client.session.selectedProfile.id === client.uuid.replace(/-/g, '')) {
       client._session = {
         index: 0,
@@ -31,7 +31,7 @@ module.exports = function (client, options) {
   client.once('success', onLogin)
 
   function onLogin (packet) {
-    const mcData = require('minecraft-data')(client.version)
+    const mcData = require('reinarpg-data')(client.version)
     client.uuid = packet.uuid
     client.username = packet.username
 
