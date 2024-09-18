@@ -9,7 +9,7 @@
 * [Allow commands not to be signed (#1277)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/21240f8ab2fd41c76f50b64e3b3a945f50b25b5e) (thanks @forester302)
 * [Add test to make sure version that are tested are mentioned in the RE… (#1276)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/80d038bd61d1933daa1e5e3251635be9ce2116b6) (thanks @rom1504)
 * [Print if there is a diff in packets in the cycle packet test (#1273)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/614be919d0f20a43e238751c829a6d584ae636cd) (thanks @rom1504)
-* [Align supported versions with mineflayer (#1272)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/ccaf538ffd2ab1e25dabd752d721f97bd8bd188f) (thanks @rom1504)
+* [Align supported versions with reinarpg-bot (#1272)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/ccaf538ffd2ab1e25dabd752d721f97bd8bd188f) (thanks @rom1504)
 
 ## 1.45.0
 * [Pc1.20.2 (#1265)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/112926da0cb2490934d122dd8ed7b79f3f6de8eb) (thanks @extremeheat)
@@ -263,7 +263,7 @@
 
 ## 1.20.2
 
-* add back token auth now that mineflayer is fixed
+* add back token auth now that reinarpg-bot is fixed
 
 ## 1.20.1
 

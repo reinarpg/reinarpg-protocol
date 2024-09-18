@@ -28,7 +28,7 @@ module.exports = function (client, options) {
   else client._lastSeenMessages = new LastSeenMessagesWithInvalidation()
   // 1.20.3+ serializes chat components in either NBT or JSON. If the chat is sent as NBT, then the structure read will differ
   // from the normal JSON structure, so it needs to be normalized. prismarine-chat processNbtMessage will do that by default
-  // on a fromNotch call. Since we don't call fromNotch here (done in mineflayer), we manually call processNbtMessage
+  // on a fromNotch call. Since we don't call fromNotch here (done in reinarpg-bot), we manually call processNbtMessage
   const processMessage = (msg) => mcData.supportFeature('chatPacketsUseNbtComponents') ? processNbtMessage(msg) : msg
 
   // This stores the last 128 inbound (signed) messages for 1.19.3 chat validation

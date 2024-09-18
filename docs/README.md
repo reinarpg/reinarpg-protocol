@@ -35,7 +35,7 @@ Parse and serialize minecraft packets, plus authentication and encryption.
  * Robust test coverage.
  * Optimized for rapidly staying up to date with Minecraft protocol updates.
  
-Want to contribute on something important for PrismarineJS ? go to https://github.com/PrismarineJS/mineflayer/wiki/Big-Prismarine-projects
+Want to contribute on something important for PrismarineJS ? go to https://github.com/reinarpg/reinarpg-bot/wiki/Big-Prismarine-projects
 
 ## Third Party Plugins
 
@@ -45,7 +45,7 @@ node-minecraft-protocol is pluggable.
 
 ## Projects Using node-minecraft-protocol
 
- * [mineflayer](https://github.com/PrismarineJS/mineflayer/) - Create minecraft
+ * [reinarpg-bot](https://github.com/reinarpg/reinarpg-bot/) - Create minecraft
    bots with a stable, high level API.
  * [mcserve](https://github.com/andrewrk/mcserve) - Runs and monitors your
    minecraft server, provides real-time web interface, allow your users to
