@@ -1,4 +1,4 @@
-const Registry = require('prismarine-registry')
+const Registry = require('reinarpg-registry')
 module.exports = client => {
   client.nextMessage = (containing) => {
     return new Promise((resolve) => {
@@ -33,7 +33,7 @@ module.exports = client => {
   })
 
   client.on('playerJoin', () => {
-    const ChatMessage = require('prismarine-chat')(client.registry || client.version)
+    const ChatMessage = require('reinarpg-chat')(client.registry || client.version)
     client.parseMessage = (comp) => {
       return new ChatMessage(comp)
     }

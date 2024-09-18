@@ -1,4 +1,4 @@
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 const Chunk = require('reinarpg-chunk')('1.16.3')
 const Vec3 = require('vec3')
 const server = mc.createServer({

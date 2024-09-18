@@ -10,7 +10,7 @@ import { Realm } from "prismarine-realms"
 
 type PromiseLike = Promise<void> | void
 
-declare module 'minecraft-protocol' {
+declare module 'reinarpg-protocol' {
 	export class Client extends EventEmitter {
 		constructor(isServer: boolean, version: string, customPackets?: any)
 		state: States

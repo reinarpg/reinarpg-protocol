@@ -2,7 +2,7 @@
 
 const path = require('path')
 const { app, ipcMain, dialog } = require('electron')
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 
 const Window = require('./Window')
 

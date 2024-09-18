@@ -1,7 +1,7 @@
 const path = require('path')
-const { Authflow: PrismarineAuth, Titles } = require('prismarine-auth')
+const { Authflow: PrismarineAuth, Titles } = require('reinarpg-auth')
 const minecraftFolderPath = require('minecraft-folder-path')
-const debug = require('debug')('minecraft-protocol')
+const debug = require('debug')('reinarpg-protocol')
 const { RealmAPI } = require('prismarine-realms')
 
 function validateOptions (options) {

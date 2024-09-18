@@ -1,4 +1,4 @@
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 const nbt = require('reinarpg-nbt')
 
 const options = {

@@ -1,6 +1,6 @@
 'use strict'
 
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 
 const [,, host, port, userOrEmail, password] = process.argv
 if (!userOrEmail) {

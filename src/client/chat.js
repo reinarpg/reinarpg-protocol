@@ -1,6 +1,6 @@
 const crypto = require('crypto')
 const concat = require('../transforms/binaryStream').concat
-const { processNbtMessage } = require('prismarine-chat')
+const { processNbtMessage } = require('reinarpg-chat')
 const messageExpireTime = 420000 // 7 minutes (ms)
 
 function isFormatted (message) {
@@ -27,7 +27,7 @@ module.exports = function (client, options) {
   if (mcData.supportFeature('chainedChatWithHashing')) client._lastSeenMessages = new LastSeenMessages()
   else client._lastSeenMessages = new LastSeenMessagesWithInvalidation()
   // 1.20.3+ serializes chat components in either NBT or JSON. If the chat is sent as NBT, then the structure read will differ
-  // from the normal JSON structure, so it needs to be normalized. prismarine-chat processNbtMessage will do that by default
+  // from the normal JSON structure, so it needs to be normalized. reinarpg-chat processNbtMessage will do that by default
   // on a fromNotch call. Since we don't call fromNotch here (done in reinarpg-bot), we manually call processNbtMessage
   const processMessage = (msg) => mcData.supportFeature('chatPacketsUseNbtComponents') ? processNbtMessage(msg) : msg
 

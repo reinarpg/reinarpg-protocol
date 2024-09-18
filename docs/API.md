@@ -19,7 +19,7 @@ automatically logged in and validated against mojang's auth.
  * beforeLogin : allow customisation of client before the `success` packet is sent.
  It takes a function with argument client and should be synchronous for the server to wait for completion before continuing execution.
  * motd : default to "A Minecraft server"
- * motdMsg : A json object of the chat message to use instead of `motd`. Can be build using [prismarine-chat](https://github.com/PrismarineJS/prismarine-chat) and calling .toJSON(). Not used with legacy pings.
+ * motdMsg : A json object of the chat message to use instead of `motd`. Can be build using [reinarpg-chat](https://github.com/PrismarineJS/reinarpg-chat) and calling .toJSON(). Not used with legacy pings.
  * maxPlayers : default to 20
  * keepAlive : send keep alive packets : default to true
  * version : the version of the server, defaults to the latest version. Set version to `false` to enable dynamic cross version support.
@@ -175,7 +175,7 @@ If `fullReason` is not defined, then the `reason` will be used.
 
 ### client.connect(port, host)
 
-Used by the [Client Class](https://github.com/PrismarineJS/node-minecraft-protocol/blob/d9d01c8be4921bb38e7b59d9c18afd771615ba22/src/client.js) to connect to a server, done by createClient automatically
+Used by the [Client Class](https://github.com/PrismarineJS/node-reinarpg-protocol/blob/d9d01c8be4921bb38e7b59d9c18afd771615ba22/src/client.js) to connect to a server, done by createClient automatically
 
 ### client.setSocket(socket)
 
@@ -293,7 +293,7 @@ Called when a system chat message arrives. A system chat message is any message 
 * formattedMessage -- (JSON) the chat message preformatted
 * positionId -- the chat type of the message. 1 for system chat and 2 for actionbar
 
-See the [chat example](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/examples/client_chat/client_chat.js#L1) for usage.
+See the [chat example](https://github.com/PrismarineJS/node-reinarpg-protocol/blob/master/examples/client_chat/client_chat.js#L1) for usage.
 
 ### per-packet events
 

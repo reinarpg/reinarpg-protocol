@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 // Tests packet serialization/deserialization from with raw binary from minecraft-packets
-const { createSerializer, createDeserializer, states, supportedVersions } = require('minecraft-protocol')
+const { createSerializer, createDeserializer, states, supportedVersions } = require('reinarpg-protocol')
 const mcPackets = require('minecraft-packets')
 const assert = require('assert')
 

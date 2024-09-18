@@ -1,11 +1,11 @@
 {
-  "name": "node-minecraft-protocol-example",
+  "name": "node-reinarpg-protocol-example",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
     "reinarpg-chunk": "^1.7.0",
     "vec3": "^0.1.3"
   },
-  "description": "A node-minecraft-protocol example",
+  "description": "A node-reinarpg-protocol example",
   "author": "Oscar Beaumont"
 }

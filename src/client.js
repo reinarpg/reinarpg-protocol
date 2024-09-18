@@ -1,6 +1,6 @@
 'use strict'
 const EventEmitter = require('events').EventEmitter
-const debug = require('debug')('minecraft-protocol')
+const debug = require('debug')('reinarpg-protocol')
 const compression = require('./transforms/compression')
 const framing = require('./transforms/framing')
 const states = require('./states')

@@ -1,4 +1,4 @@
-# node-minecraft-protocol proxy
+# node-reinarpg-protocol proxy
 
 A proxy, create a nmp server, if you connect to that server with a client, it creates a nmp client which connect to the server you initially provided.
 

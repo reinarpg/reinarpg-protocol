@@ -1,6 +1,6 @@
 'use strict'
 
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 
 const [,, username, realmName] = process.argv
 if (!realmName) {

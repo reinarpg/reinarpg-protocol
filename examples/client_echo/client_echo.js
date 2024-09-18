@@ -1,4 +1,4 @@
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 
 if (process.argv.length < 4 || process.argv.length > 6) {
   console.log('Usage : node echo.js <host> <port> [<name>]')

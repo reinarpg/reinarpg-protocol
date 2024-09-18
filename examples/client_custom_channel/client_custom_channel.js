@@ -1,4 +1,4 @@
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 
 if (process.argv.length < 4 || process.argv.length > 6) {
   console.log('Usage : node client_channel.js <host> <port> [<name>] [<password>]')
@@ -17,8 +17,8 @@ client.on('login', onlogin)
 client.on('error', console.log)
 
 function onlogin () {
-  client.registerChannel('node-minecraft-protocol:custom_channel_one', ['string', []], true)
-  client.registerChannel('node-minecraft-protocol:custom_channel_two', ['string', []], true)
-  client.writeChannel('node-minecraft-protocol:custom_channel_one', 'hello from the client')
-  client.on('node-minecraft-protocol:custom_channel_two', console.log)
+  client.registerChannel('node-reinarpg-protocol:custom_channel_one', ['string', []], true)
+  client.registerChannel('node-reinarpg-protocol:custom_channel_two', ['string', []], true)
+  client.writeChannel('node-reinarpg-protocol:custom_channel_one', 'hello from the client')
+  client.on('node-reinarpg-protocol:custom_channel_two', console.log)
 }

@@ -1,4 +1,4 @@
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 const readline = require('readline')
 const rl = readline.createInterface({
   input: process.stdin,
@@ -38,7 +38,7 @@ client.on('error', function (err) {
 })
 
 client.on('connect', () => {
-  const ChatMessage = require('prismarine-chat')(client.version)
+  const ChatMessage = require('reinarpg-chat')(client.version)
 
   console.log('Connected to server')
   rl.prompt()

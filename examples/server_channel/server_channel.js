@@ -1,4 +1,4 @@
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 
 const server = mc.createServer({
   'online-mode': false, // optional

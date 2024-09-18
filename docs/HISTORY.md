@@ -1,30 +1,30 @@
 # History
 
 ## 1.47.0
-* [1.20.3 / 1.20.4 support (#1275)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/1d9a38253a28a515d82fffa13806cb0874c5b36c) (thanks @wgaylord)
+* [1.20.3 / 1.20.4 support (#1275)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/1d9a38253a28a515d82fffa13806cb0874c5b36c) (thanks @wgaylord)
 
 ## 1.46.0
-* [Ensure `onReady` in client is called once (#1287)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/85a26a52944c89af273bc974380b438073280981) (thanks @extremeheat)
-* [Acknowledge returning to configuration state if in play state. (#1284)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/092e10c53d33a7b9be52b5cbb67b1e3e55ac2690) (thanks @wgaylord)
-* [Allow commands not to be signed (#1277)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/21240f8ab2fd41c76f50b64e3b3a945f50b25b5e) (thanks @forester302)
-* [Add test to make sure version that are tested are mentioned in the RE… (#1276)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/80d038bd61d1933daa1e5e3251635be9ce2116b6) (thanks @rom1504)
-* [Print if there is a diff in packets in the cycle packet test (#1273)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/614be919d0f20a43e238751c829a6d584ae636cd) (thanks @rom1504)
-* [Align supported versions with reinarpg-bot (#1272)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/ccaf538ffd2ab1e25dabd752d721f97bd8bd188f) (thanks @rom1504)
+* [Ensure `onReady` in client is called once (#1287)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/85a26a52944c89af273bc974380b438073280981) (thanks @extremeheat)
+* [Acknowledge returning to configuration state if in play state. (#1284)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/092e10c53d33a7b9be52b5cbb67b1e3e55ac2690) (thanks @wgaylord)
+* [Allow commands not to be signed (#1277)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/21240f8ab2fd41c76f50b64e3b3a945f50b25b5e) (thanks @forester302)
+* [Add test to make sure version that are tested are mentioned in the RE… (#1276)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/80d038bd61d1933daa1e5e3251635be9ce2116b6) (thanks @rom1504)
+* [Print if there is a diff in packets in the cycle packet test (#1273)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/614be919d0f20a43e238751c829a6d584ae636cd) (thanks @rom1504)
+* [Align supported versions with reinarpg-bot (#1272)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/ccaf538ffd2ab1e25dabd752d721f97bd8bd188f) (thanks @rom1504)
 
 ## 1.45.0
-* [Pc1.20.2 (#1265)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/112926da0cb2490934d122dd8ed7b79f3f6de8eb) (thanks @extremeheat)
-* [Improve CI setup for per version tests (#1267)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/1740124c4722c2c49f8aed0d708ff5ebecc7743c) (thanks @rom1504)
-* [Allow to create custom client & communication between clients (#1254)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/9e991094761d51243cb28a33bb45630f3064511d) (thanks @zardoy)
-* [Fixed 'unsignedContent' field using nonexistent 'packet.unsignedContent' when emitting 'playerChat' event. (#1263)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/066a2b3646cb8bef6be1fa974597b975aaf08d42) (thanks @Ynfuien)
-* [Add chat typing to client (#1260)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/788bff289030fa66c980de82d82cb953bf76332b) (thanks @IceTank)
-* [chat: Only sign command args when profile keys defined (#1257)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/0ac8c087a28b3ccc73f8eea5941e4902e33c494e) (thanks @evan-goode)
+* [Pc1.20.2 (#1265)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/112926da0cb2490934d122dd8ed7b79f3f6de8eb) (thanks @extremeheat)
+* [Improve CI setup for per version tests (#1267)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/1740124c4722c2c49f8aed0d708ff5ebecc7743c) (thanks @rom1504)
+* [Allow to create custom client & communication between clients (#1254)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/9e991094761d51243cb28a33bb45630f3064511d) (thanks @zardoy)
+* [Fixed 'unsignedContent' field using nonexistent 'packet.unsignedContent' when emitting 'playerChat' event. (#1263)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/066a2b3646cb8bef6be1fa974597b975aaf08d42) (thanks @Ynfuien)
+* [Add chat typing to client (#1260)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/788bff289030fa66c980de82d82cb953bf76332b) (thanks @IceTank)
+* [chat: Only sign command args when profile keys defined (#1257)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/0ac8c087a28b3ccc73f8eea5941e4902e33c494e) (thanks @evan-goode)
 
 ## 1.44.0
-* [Send chat commands as chat commands instead of chat messages for 1.19.3-1.20.1 (#1241)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/41f9e4ac4a35b0ce241264a3f964c4874d96a119) (thanks @lkwilson)
-* [Fix end bundle bundle_delimiter packet not being emitted (#1248)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/35b2aa536a4739c11fe78f6e8e5c591abd0b0498) (thanks @PondWader)
-* [Bump @types/readable-stream from 2.3.15 to 4.0.0 (#1247)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/94b9c228b07bbaf210aa9f90ab240cb6aa9d7751) (thanks @dependabot[bot])
-* [fix broken link (#1243)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/cc9aa9416101407421bdd085002ec2b26ccfbc83) (thanks @FurriousFox)
-* [Add command gh workflow allowing to use release command in comments (#1244)](https://github.com/PrismarineJS/node-minecraft-protocol/commit/1a4cfa7f5ee1a896b6a924708536d3f956cb869e) (thanks @rom1504)
+* [Send chat commands as chat commands instead of chat messages for 1.19.3-1.20.1 (#1241)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/41f9e4ac4a35b0ce241264a3f964c4874d96a119) (thanks @lkwilson)
+* [Fix end bundle bundle_delimiter packet not being emitted (#1248)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/35b2aa536a4739c11fe78f6e8e5c591abd0b0498) (thanks @PondWader)
+* [Bump @types/readable-stream from 2.3.15 to 4.0.0 (#1247)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/94b9c228b07bbaf210aa9f90ab240cb6aa9d7751) (thanks @dependabot[bot])
+* [fix broken link (#1243)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/cc9aa9416101407421bdd085002ec2b26ccfbc83) (thanks @FurriousFox)
+* [Add command gh workflow allowing to use release command in comments (#1244)](https://github.com/PrismarineJS/node-reinarpg-protocol/commit/1a4cfa7f5ee1a896b6a924708536d3f956cb869e) (thanks @rom1504)
 
 ## 1.43.2
 
@@ -95,7 +95,7 @@
 
 ## 1.36.1
 
-* Fix new types not being optional. (@IceTank) [#1033](https://github.com/PrismarineJS/node-minecraft-protocol/pull/1033)
+* Fix new types not being optional. (@IceTank) [#1033](https://github.com/PrismarineJS/node-reinarpg-protocol/pull/1033)
 
 ## 1.36.0
 
@@ -162,7 +162,7 @@
 ## 1.28.0
 
 * Fixed TypeScript error TS2769 when authenticating with mojang (#922) (@liquiddevelopmentnet)
-* Update prismarine-auth usage (#923) (@extremeheat)
+* Update reinarpg-auth usage (#923) (@extremeheat)
 * types(Client): fix events (#918) (@muchnameless and Robert Hartmann)  
 * add default for authTitle (#920) (@U5B)
 * Update ping function return type and make callback optional (#909) (@ShayBox)
@@ -171,15 +171,15 @@
 
 ## 1.27.2
 
-* try again to enable prismarine-auth
+* try again to enable reinarpg-auth
 
 ## 1.27.1
 
-* revert prismarine-auth usage for now (see https://github.com/panva/jose/issues/307)
+* revert reinarpg-auth usage for now (see https://github.com/panva/jose/issues/307)
 
 ## 1.27.0
 
-* use prismarine-auth
+* use reinarpg-auth
 
 ## 1.26.6
 
@@ -204,11 +204,11 @@
 
 ## 1.26.1
 
-* temporarily revert prismarine-auth
+* temporarily revert reinarpg-auth
 
 ## 1.26.0
 
-* move microsoft auth to prismarine-auth (@Kashalls)
+* move microsoft auth to reinarpg-auth (@Kashalls)
 * Add beforeLogin function option on server (@rob9315)
 * Make cache path creation recursive (@DecentralisedTech)
 * Mc.ping return a promise and use callbacks (@AngeryFrog)
@@ -323,7 +323,7 @@
 
 ## 1.12.0
 
-* use protodef compiler,  making node-minecraft-protocol 10x faster, thanks for this huge improvement @Karang
+* use protodef compiler,  making node-reinarpg-protocol 10x faster, thanks for this huge improvement @Karang
 
 ## 1.11.0
 
@@ -529,7 +529,7 @@
 * requires node>=4
 * big refactor of createClient : split in several modules (thanks @deathcap)
 * stop using es7
-* make it easy to create client plugins (and create minecraft-protocol-forge) (thanks @deathcap)
+* make it easy to create client plugins (and create reinarpg-protocol-forge) (thanks @deathcap)
 * use babel6
 * add dynamic version support in client
 * update reinarpg-data
@@ -595,7 +595,7 @@
 ## 0.14.0
 
  * Huge rewrite of the internals, using transform streams, which eliminates two
-   classes of problems from node-minecraft-protocol :
+   classes of problems from node-reinarpg-protocol :
    * Uncatchable errors being triggered inside the protocol parser
    * Packets ariving out of order, causing several race conditions
  * All the attributes that were previously exposed via `mc.protocol` are now directly
@@ -612,7 +612,7 @@
  * Exposed the Client class to the browser, after removing node-specific details
  * Fixed the examples
  * Silenced the "DID NOT PARSE THE WHOLE THING" debug message, and made it print more useful info
- * Updated ursa-purejs dependency, which in turned fixed windows version of node-minecraft-protocol.
+ * Updated ursa-purejs dependency, which in turned fixed windows version of node-reinarpg-protocol.
 
 ## 0.13.3
 
@@ -685,7 +685,7 @@
 ## 0.11.0
 
  * support minecraft protocol 1.6.1 / protocol version 73 (thanks [Matt Bell](https://github.com/mappum))
-   * *note:* chat packets have a new format (see [the examples](https://github.com/andrewrk/node-minecraft-protocol/tree/master/examples) for how to upgrade).
+   * *note:* chat packets have a new format (see [the examples](https://github.com/andrewrk/node-reinarpg-protocol/tree/master/examples) for how to upgrade).
 
 ## 0.10.1
 

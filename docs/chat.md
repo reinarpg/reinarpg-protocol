@@ -11,7 +11,7 @@ that are on the server. The server also does some checks during the login proced
 the public key, to ensure it came from Mojang. This is achieved by the client sending along a signature from Mojang's
 servers in the login step which is the output of concatenating and signing the public key, player UUID and timestamp 
 with a special Mojang private key specifically for signature validation. The public key used to verify this 
-signature is public and is stored statically inside  node-minecraft-protocol (src/server/constants.js). 
+signature is public and is stored statically inside  node-reinarpg-protocol (src/server/constants.js). 
 
 Back to the client, when other players join the server they also get a copy of the players' public key for chat verification.
 The clients can then verify that a message came from a client as well as do secondary checks like verifying timestamps.

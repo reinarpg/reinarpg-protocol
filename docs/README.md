@@ -1,11 +1,11 @@
 # minecraft protocol
-[![NPM version](https://img.shields.io/npm/v/minecraft-protocol.svg)](https://www.npmjs.com/package/minecraft-protocol)
-[![Build Status](https://github.com/PrismarineJS/node-minecraft-protocol/workflows/CI/badge.svg)](https://github.com/PrismarineJS/node-minecraft-protocol/actions?query=workflow%3A%22CI%22)
+[![NPM version](https://img.shields.io/npm/v/reinarpg-protocol.svg)](https://www.npmjs.com/package/reinarpg-protocol)
+[![Build Status](https://github.com/PrismarineJS/node-reinarpg-protocol/workflows/CI/badge.svg)](https://github.com/PrismarineJS/node-reinarpg-protocol/actions?query=workflow%3A%22CI%22)
 [![Discord](https://img.shields.io/badge/chat-on%20discord-brightgreen.svg)](https://discord.gg/GsEFRM8)
 [![Gitter](https://img.shields.io/badge/chat-on%20gitter-brightgreen.svg)](https://gitter.im/PrismarineJS/general)
 [![Irc](https://img.shields.io/badge/chat-on%20irc-brightgreen.svg)](https://irc.gitter.im/)
 
-[![Try it on gitpod](https://img.shields.io/badge/try-on%20gitpod-brightgreen.svg)](https://gitpod.io/#https://github.com/PrismarineJS/node-minecraft-protocol)
+[![Try it on gitpod](https://img.shields.io/badge/try-on%20gitpod-brightgreen.svg)](https://gitpod.io/#https://github.com/PrismarineJS/node-reinarpg-protocol)
 
 Parse and serialize minecraft packets, plus authentication and encryption.
 
@@ -39,11 +39,11 @@ Want to contribute on something important for PrismarineJS ? go to https://githu
 
 ## Third Party Plugins
 
-node-minecraft-protocol is pluggable.
+node-reinarpg-protocol is pluggable.
 
-* [minecraft-protocol-forge](https://github.com/PrismarineJS/node-minecraft-protocol-forge) add forge support to minecraft-protocol
+* [reinarpg-protocol-forge](https://github.com/PrismarineJS/node-reinarpg-protocol-forge) add forge support to reinarpg-protocol
 
-## Projects Using node-minecraft-protocol
+## Projects Using node-reinarpg-protocol
 
  * [reinarpg-bot](https://github.com/reinarpg/reinarpg-bot/) - Create minecraft
    bots with a stable, high level API.
@@ -56,11 +56,11 @@ node-minecraft-protocol is pluggable.
  * [minecraft-packet-debugger](https://github.com/wvffle/minecraft-packet-debugger) - A tool to capture Minecraft packets in a buffer then view them in a browser.
  * [aresrpg](https://github.com/aresrpg/aresrpg) - An open-source mmorpg minecraft server.
  * [SteveProxy](https://github.com/SteveProxy/proxy) - Proxy for Minecraft with the ability to change the gameplay using plugins.
- * and [several thousands others](https://github.com/PrismarineJS/node-minecraft-protocol/network/dependents?package_id=UGFja2FnZS0xODEzMDk0OQ%3D%3D)
+ * and [several thousands others](https://github.com/PrismarineJS/node-reinarpg-protocol/network/dependents?package_id=UGFja2FnZS0xODEzMDk0OQ%3D%3D)
 
 ## Installation
 
-`npm install minecraft-protocol`
+`npm install reinarpg-protocol`
 
 ## Documentation
 
@@ -73,7 +73,7 @@ node-minecraft-protocol is pluggable.
 ### Echo client example
 
 ```js
-const mc = require('minecraft-protocol');
+const mc = require('reinarpg-protocol');
 const client = mc.createClient({
   host: "localhost",   // optional
   port: 25565,                 // set if you need a port that isn't 25565
@@ -106,7 +106,7 @@ Note: SRV records will only be looked up if the port is unspecified or set to 25
 Example to connect to a Realm that the authenticating account is owner of or has been invited to:
 
 ```js
-const mc = require('minecraft-protocol');
+const mc = require('reinarpg-protocol');
 const client = mc.createClient({
   realms: {
     pickRealm: (realms) => realms[0] // Function which recieves an array of joined/owned Realms and must return a single Realm. Can be async
@@ -120,7 +120,7 @@ const client = mc.createClient({
 For a more up to date example, see examples/server/server.js.
 
 ```js
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 const nbt = require('reinarpg-nbt')
 const server = mc.createServer({
   'online-mode': true,   // optional
@@ -200,12 +200,12 @@ server.on('playerJoin', function(client) {
 You can enable some protocol debugging output using `DEBUG` environment variable:
 
 ```bash
-DEBUG="minecraft-protocol" node [...]
+DEBUG="reinarpg-protocol" node [...]
 ```
 
 On Windows:
 ```
-set DEBUG=minecraft-protocol
+set DEBUG=reinarpg-protocol
 node your_script.js
 ```
 

@@ -7,10 +7,10 @@ assignees: ''
 
 ---
 
-[ ] The [FAQ](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/docs/FAQ.md) doesn't contain a resolution to my issue 
+[ ] The [FAQ](https://github.com/PrismarineJS/node-reinarpg-protocol/blob/master/docs/FAQ.md) doesn't contain a resolution to my issue 
 
 ## Versions
- - minecraft-protocol: #.#.#
+ - reinarpg-protocol: #.#.#
  - server: vanilla/spigot/paper #.#.#
  - node: #.#.#
 

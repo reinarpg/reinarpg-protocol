@@ -1,7 +1,7 @@
 'use strict'
 
 const ping = require('../ping')
-const debug = require('debug')('minecraft-protocol')
+const debug = require('debug')('reinarpg-protocol')
 const states = require('../states')
 const minecraftData = require('reinarpg-data')
 

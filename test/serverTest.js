@@ -194,7 +194,7 @@ for (const supportedVersion of mc.supportedVersions) {
     })
 
     it('responds to ping requests', function (done) {
-      const chatMotd = { // Generated with prismarine-chat MessageBuilder on version 1.16 may change in the future
+      const chatMotd = { // Generated with reinarpg-chat MessageBuilder on version 1.16 may change in the future
         extra: [{ color: 'red', text: 'Red text' }],
         bold: true,
         text: 'Example chat mesasge'

@@ -15,8 +15,8 @@ client.on('end', () => {})
 ## How can I make a proxy with this ?
 
 * Check out our WIP proxy lib <https://github.com/PrismarineJS/prismarine-proxy>
-* See this example <https://github.com/PrismarineJS/node-minecraft-protocol/tree/master/examples/proxy>
-* Read this issue <https://github.com/PrismarineJS/node-minecraft-protocol/issues/712>
+* See this example <https://github.com/PrismarineJS/node-reinarpg-protocol/tree/master/examples/proxy>
+* Read this issue <https://github.com/PrismarineJS/node-reinarpg-protocol/issues/712>
 * check out <https://github.com/Heath123/pakkit>
 * Check out this app <https://github.com/wvffle/minecraft-packet-debugger>
 

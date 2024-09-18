@@ -6,7 +6,7 @@ const yggdrasil = require('yggdrasil')
 const chatPlugin = require('./chat')
 const { concat } = require('../transforms/binaryStream')
 const { mojangPublicKeyPem } = require('./constants')
-const debug = require('debug')('minecraft-protocol')
+const debug = require('debug')('reinarpg-protocol')
 
 module.exports = function (client, server, options) {
   const mojangPubKey = crypto.createPublicKey(mojangPublicKeyPem)

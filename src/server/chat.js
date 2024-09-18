@@ -1,6 +1,6 @@
 const crypto = require('crypto')
 const concat = require('../transforms/binaryStream').concat
-const debug = require('debug')('minecraft-protocol')
+const debug = require('debug')('reinarpg-protocol')
 const messageExpireTime = 300000 // 5 min (ms)
 const { mojangPublicKeyPem } = require('./constants')
 

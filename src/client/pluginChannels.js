@@ -1,6 +1,6 @@
 const ProtoDef = require('protodef').ProtoDef
 const minecraft = require('../datatypes/minecraft')
-const debug = require('debug')('minecraft-protocol')
+const debug = require('debug')('reinarpg-protocol')
 const nbt = require('reinarpg-nbt')
 
 module.exports = function (client, options) {

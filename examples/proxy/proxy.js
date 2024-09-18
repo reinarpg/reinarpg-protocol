@@ -1,4 +1,4 @@
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 
 const states = mc.states
 function printHelpAndExit (exitCode) {

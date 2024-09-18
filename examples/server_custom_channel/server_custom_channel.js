@@ -1,4 +1,4 @@
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 
 const server = mc.createServer({
   'online-mode': false, // optional
@@ -24,8 +24,8 @@ server.on('playerJoin', function (client) {
     isDebug: false,
     isFlat: false
   })
-  client.registerChannel('node-minecraft-protocol:custom_channel_one', ['string', []], true)
-  client.registerChannel('node-minecraft-protocol:custom_channel_two', ['string', []], true)
+  client.registerChannel('node-reinarpg-protocol:custom_channel_one', ['string', []], true)
+  client.registerChannel('node-reinarpg-protocol:custom_channel_two', ['string', []], true)
   client.write('position', {
     x: 0,
     y: 1.62,
@@ -34,6 +34,6 @@ server.on('playerJoin', function (client) {
     pitch: 0,
     flags: 0x00
   })
-  client.writeChannel('node-minecraft-protocol:custom_channel_two', 'hello from the server')
-  client.on('node-minecraft-protocol:custom_channel_one', console.log)
+  client.writeChannel('node-reinarpg-protocol:custom_channel_two', 'hello from the server')
+  client.on('node-reinarpg-protocol:custom_channel_one', console.log)
 })
