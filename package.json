@@ -53,7 +53,7 @@
     "lodash.merge": "^4.3.0",
     "reinarpg-data": "github:reinarpg/reinarpg-data",
     "minecraft-folder-path": "^1.2.0",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^3.3.2",
     "node-rsa": "^0.4.2",
     "reinarpg-auth": "github:reinarpg/reinarpg-auth",
     "reinarpg-chat": "github:reinarpg/reinarpg-chat",
