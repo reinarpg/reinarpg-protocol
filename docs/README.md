@@ -50,7 +50,7 @@ node-reinarpg-protocol is pluggable.
  * [mcserve](https://github.com/andrewrk/mcserve) - Runs and monitors your
    minecraft server, provides real-time web interface, allow your users to
    create bots.
- * [flying-squid](https://github.com/PrismarineJS/flying-squid) - Create minecraft
+ * [reinarpg-server](https://github.com/PrismarineJS/reinarpg-server) - Create minecraft
    servers with a high level API, also a minecraft server by itself.
  * [pakkit](https://github.com/Heath123/pakkit) - A GUI tool to monitor Minecraft packets in real time, allowing you to view their data and interactively edit and resend them.
  * [minecraft-packet-debugger](https://github.com/wvffle/minecraft-packet-debugger) - A tool to capture Minecraft packets in a buffer then view them in a browser.

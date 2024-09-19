@@ -6,7 +6,7 @@
   "types": "src/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/PrismarineJS/node-reinarpg-protocol.git"
+    "url": "git://github.com/reinarpg/reinarpg-protocol.git"
   },
   "scripts": {
     "test": "npm run mochaTest",
